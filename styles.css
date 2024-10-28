@@ -1,63 +1,56 @@
-/* Fondo y estilos del encabezado */
+/* Fondo y estilos del tema oscuro */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Fondo y estilo del encabezado */
 .header-bg {
-    background-image: url('cabecera.jpg'); /* Cambia 'your-image.jpg' por la imagen que deseas usar */
+    background-image: url('your-image.jpg'); /* Cambia 'your-image.jpg' por la imagen que deseas usar */
     background-size: cover;
     position: relative;
-    color: white;
-    text-align: center;
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro más intenso */
     padding: 2em;
 }
 
-/* Estilos para la tarjeta */
+/* Estilos de la tarjeta */
 .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border: none;
     border-radius: 10px;
-    border: none;
+    color: #ffffff;
 }
 
-/* Estilos del botón y el campo de resultado */
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-#resultado {
-    color: #007bff;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Estilos de entrada */
+/* Inputs transparentes con borde blanco */
 .form-control {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     border-radius: 5px;
 }
 
+/* Placeholder en blanco */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder blanco con un poco de transparencia */
+}
+
+/* Borde blanco más brillante en el enfoque */
 .form-control:focus {
-    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
-    border-color: #007bff;
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra blanca suave */
+    outline: none;
 }
 
-/* Animación del botón al hacer clic */
-.btn:active {
-    transform: scale(0.98);
-}
-
-/* Estilos de la sección de información adicional */
-section.bg-light {
-    background-color: #f8f9fa;
-    padding: 2rem;
-}
-
-.container.text-center p {
-    font-size: 1.1rem;
-    color: #6c757d;
+/* Botón primario en tema oscuro */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -77,11 +70,10 @@ section.bg-light {
 
 /* Estilos de la sección de información adicional */
 section.bg-light {
-    background-color: #f8f9fa;
-    padding: 2rem;
+    background-color: #1e1e1e;
 }
 
 .container.text-center p {
     font-size: 1.1rem;
-    color: #6c757d;
+    color: #cccccc;
 }
