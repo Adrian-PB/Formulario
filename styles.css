@@ -1,0 +1,75 @@
+/* Fondo y estilos del encabezado */
+.header-bg {
+    background-image: url('cabecera.jpg'); /* Cambia 'your-image.jpg' por la imagen que deseas usar */
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    color: white;
+}
+
+/* Estilo de inputs transparentes con borde blanco */
+.form-control {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Cambia el color del texto de los placeholders a blanco */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Blanco con un poco de transparencia */
+}
+
+/* Enfoque en los campos: borde blanco más brillante */
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra blanca suave */
+    outline: none;
+}
+
+/* Estilos del botón y el campo de resultado */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Animación del botón al hacer clic */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Estilos de la sección de información adicional */
+section.bg-light {
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+.container.text-center p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
