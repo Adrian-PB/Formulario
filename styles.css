@@ -1,12 +1,12 @@
 /* Fondo y estilos del tema oscuro */
 body {
-    background-color: #121212;
-    color: #ffffff;
+    background-image: url('edificios.jpg');
+    background-size: cover;
 }
 
 /* Fondo y estilo del encabezado */
 .header-bg {
-    background-image: url('your-image.jpg'); /* Cambia 'your-image.jpg' por la imagen que deseas usar */
+    background-image: url('cabecera.jpg');
     background-size: cover;
     position: relative;
 }
