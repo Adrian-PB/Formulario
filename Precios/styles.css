@@ -1,71 +1,79 @@
+/* Fondo y estilos del tema oscuro */
 body {
     background-image: url('edificios.jpg');
     background-size: cover;
-    color: #ffffff; /* Color del texto general */
 }
 
+/* Fondo y estilo del encabezado */
 .header-bg {
-    background-position: center;
+    background-image: url('cabecera.jpg');
+    background-size: cover;
+    position: relative;
 }
 
+.overlay {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro más intenso */
+    padding: 2em;
+}
+
+/* Estilos de la tarjeta */
 .card {
-    background-color: rgba(36, 36, 36, 0.7);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     border: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    color: #ffffff;
 }
 
-.card-body {
-    padding: 2rem;
+/* Inputs transparentes con borde blanco */
+.form-control {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
-h1, h4 {
-    transition: color 0.3s;
+/* Placeholder en blanco */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder blanco con un poco de transparencia */
 }
 
-h1:hover, h4:hover {
-    color: #007bff; /* Cambia el color al pasar el ratón */
+/* Borde blanco más brillante en el enfoque */
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra blanca suave */
+    outline: none;
 }
 
+/* Botón primario en tema oscuro */
 .btn-primary {
-    background-color: #007bff; /* Color del botón */
+    background-color: #007bff;
     border: none;
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Color al pasar el ratón */
-}
-
-.input-group .form-control {
-    background-color: #2b2b2b; /* Fondo de los campos de entrada */
-    color: #ffffff; /* Color del texto en los campos */
-    border: 1px solid #444; /* Borde de los campos */
-}
-
-.input-group .form-control::placeholder {
-    color: #b0b0b0; /* Color del texto del placeholder */
-}
-
-select.form-control {
-    background-color: #2b2b2b; /* Fondo oscuro para los select */
-    color: #ffffff; /* Color del texto en los select */
-    border: 1px solid #444; /* Borde de los select */
-}
-
-select.form-control option {
-    background-color: #2b2b2b; /* Fondo oscuro para las opciones */
-    color: #ffffff; /* Color del texto de las opciones */
+    background-color: #0056b3;
 }
 
 #resultado {
-    color: #28a745; /* Color del resultado */
+    color: #007bff;
     font-weight: bold;
+    text-align: center;
 }
 
-label {
-    color: #ffffff; /* Color de las etiquetas */
-    font-weight: bold; /* Etiquetas en negrita */
+/* Animación del botón al hacer clic */
+.btn:active {
+    transform: scale(0.98);
 }
 
-.bg-light {
-    background-color: #1f1f1f !important; /* Color de fondo claro para secciones */
+/* Estilos de la sección de información adicional */
+section.bg-light {
+    background-color: #1e1e1e;
+}
+
+.container.text-center p {
+    font-size: 1.1rem;
+    color: #cccccc;
 }
